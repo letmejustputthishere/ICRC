@@ -237,7 +237,7 @@ Note that tokens for which an ICRC-1 account cannot be found have a `null` respo
 
 ```candid "Methods" +=
 icrc7_owner_of : (token_ids : vec nat)
-    -> (vec record { token_id : nat; account : opt Account }) query;
+    -> (vec record { nat; account }) query;
 ```
 
 ### icrc7_balance_of
